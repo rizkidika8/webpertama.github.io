@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: black;
+}
+/* main */
+main {
+  width: 100%;
+  display: block;
+  padding: 0 auto;
+  margin: 0 auto;
+  overflow: auto;
+}
+.content {
+  width: 75%;
+  float: left;
+}
+aside {
+  display: block;
+  padding-top: 3rem;
+  width: 25%;
+  float: right;
+  position: relative;
+  top: -1188px;
+}
+/* header */
+header {
+  display: inline;
+}
+nav {
+  background-image: linear-gradient(to right, #ff8311, black);
+  padding: 1px;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav a {
+  margin-left: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+.jumbotron {
+  background-image: url(assets/jumbotron.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  margin-top: -2.5rem;
+  display: flex;
+}
+.bara {
+  font-family: viga;
+  font-size: 5em;
+  padding-left: 10%;
+  padding-top: 7.5%;
+  color: black;
+  text-align: center;
+  line-height: 70%;
+}
+.fiber {
+  font-size: 3em;
+  color: white;
+  text-align: right;
+  padding-left: 35%;
+  padding-top: 7%;
+}
+.fiber span {
+  color: #ff8311;
+  font-size: 55px;
+}
+.bara span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: white;
+  padding-top: 5%;
+}
+span.bull {
+  color: black;
+}
+/* artikel home */
+article {
+  display: flex;
+  padding-top: 3rem;
+}
+.box1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+}
+
+img {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 3em;
+}
+p {
+  font-size: 20pt;
+  text-align: justify;
+}
+/* project */
+#project {
+  display: block;
+  width: 100%;
+  padding-top: 5rem;
+}
+.container {
+  display: flex;
+  width: 98%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container img {
+  flex-grow: 1;
+  width: 30%;
+  object-position: bottom;
+  padding: 40px;
+  margin: 20px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  cursor: pointer;
+  align-items: center;
+  border: 2px solid grey;
+}
+.gradient-image1 {
+  background-image: radial-gradient(white, black);
+}
+.gradient-image {
+  background-image: radial-gradient(white, #ff8311);
+}
+
+/* galeri */
+#gallery {
+  display: block;
+  padding-top: 5rem;
+}
+.container-slideshow {
+  width: 75%;
+  position: relative;
+  margin: auto;
+  justify-items: center;
+}
+
+.slideshow {
+  display: none;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  bottom: 10px;
+  text-align: center;
+}
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fading-slideshow {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* contact */
+
+form {
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  background-image: -moz-radial-gradient(white, black);
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 10%;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+label,
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+label {
+  color: white;
+  font-weight: bold;
+}
+.submit {
+  color: white;
+  width: 100px;
+  font-size: larger;
+  cursor: pointer;
+  background-color: #ff8311;
+  border: 1px solid #ff8311;
+  font-family: "Times New Roman", Times, serif;
+}
+.submit:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+/* aside */
+
+.profile {
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-image: radial-gradient(white, #ff8311);
+  border: 2px solid grey;
+  padding-top: 10px;
+  margin-left: 5px;
+  width: 95%;
+}
+
+.cizzy {
+  justify-content: center;
+  width: 85%;
+  margin: 10%;
+  margin-bottom: 20px;
+}
+aside h3 {
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  text-align: left;
+  padding: 25px;
+  color: black;
+  font-size: 15pt;
+}
+
+/* footer */
+footer {
+  padding: 10px;
+  background-color: #ff8311;
+  color: white;
+  text-align: center;
+  font-size: 14pt;
+  margin-top: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+/* space */
+/* space */
+@media only screen and (max-width: 980px) {
+  main {
+    display: block;
+  }
+  .content {
+    width: 100%;
+  }
+  aside {
+    display: block;
+    width: 100%;
+  }
+  .jumbotron {
+    display: flex;
+  }
+  .bara {
+    font-size: 50px;
+    padding-top: 20%;
+  }
+  .bara span {
+    font-size: 20px;
+  }
+  .fiber {
+    font-size: 40px;
+    padding-left: 15%;
+    padding-top: 20%;
+  }
+  .fiber span {
+    font-size: 45px;
+  }
+  /* artikel */
+  article {
+    display: block;
+  }
+  .box1 {
+    display: block;
+    width: 96%;
+  }
+  img {
+    width: 65%;
+  }
+  /* galeri */
+  .container-slideshow {
+    width: 94%;
+    margin-left: 40px;
+  }
+  /* contact */
+  form {
+    margin-bottom: 70px;
+    margin-top: 20px;
+  }
+  /* aside */
+  aside {
+    position: relative;
+    top: 230%;
+  }
+  .profile {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .cizzy {
+    width: 230px;
+    position: relative;
+    top: -115px;
+  }
+  aside h2 {
+    margin: auto;
+  }
+  aside h3 {
+    font-size: 20pt;
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+  }
+  table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+/* space */
+/* space */
+@media only screen and (max-width: 600px) {
+  main {
+    display: block;
+  }
+  #content {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  nav a {
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .jumbotron {
+    display: block;
+  }
+  .bara {
+    font-size: 40px;
+    padding-top: 20%;
+  }
+  .bara span {
+    font-size: 20px;
+  }
+  .fiber {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20%;
+    padding-top: 5%;
+  }
+  .fiber span {
+    color: black;
+    font-size: 35px;
+  }
+  /* artikel */
+  article {
+    display: block;
+  }
+
+  .box1 {
+    display: block;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+  /* project */
+  .container img {
+    padding: 28px;
+  }
+  /* galeri */
+  .container-slideshow {
+    width: auto;
+    padding-right: 20px;
+  }
+  /* aside */
+  aside {
+    margin-bottom: 100px;
+    display: block;
+  }
+  .profile {
+    display: block;
+    justify-items: center;
+  }
+  aside h2 {
+    margin-bottom: 20px;
+  }
+  .cizzy {
+    justify-items: center;
+    width: 60%;
+    position: relative;
+    top: 10%;
+    left: 12%;
+  }
+  aside h3 {
+    display: none;
+  }
+  table {
+    margin-top: 60px;
+  }
+}
+/* space */
+/* space */
+@media only screen and (max-width: 450px) {
+  main {
+    display: block;
+  }
+  #content {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  /* nav */
+  nav a {
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  .bara {
+    font-size: 40px;
+    padding-top: 35%;
+  }
+  /* home */
+
+  article {
+    display: block;
+    margin-top: 15px;
+  }
+  .box1 {
+    display: block;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+  #project {
+    display: block;
+  }
+  .container img {
+    width: 100%;
+    display: block;
+    padding: 35px;
+  }
+  /* galeri */
+  .container-slideshow {
+    width: 100%;
+    justify-items: center;
+    position: relative;
+    left: -5%;
+  }
+
+  /* aside */
+  .profile img {
+    width: 350px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+  }
+  .profile {
+    width: 98%;
+  }
+  aside h3 {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  main {
+    display: block;
+  }
+  /* galeri */
+  .container-slideshow {
+    width: 100%;
+    justify-content: center;
+  }
+  /* aside */
+  .profile img {
+    margin-left: 14px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  aside h3 {
+    font-size: 20pt;
+    margin-bottom: 15px;
+  }
+  table {
+    padding: 15px;
+    font-size: 12pt;
+  }
+}
